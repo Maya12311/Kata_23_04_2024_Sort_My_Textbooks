@@ -1,0 +1,14 @@
+import java.util.*; 
+
+
+class sorter {
+  public static List<String> sort(List<String> textbooks) {
+    //Cramming right before a test can't be that bad?
+    ArrayList<String> answer = new ArrayList<>(); 
+    
+    answer.addAll(textbooks);
+    Collections.sort(answer,  String.CASE_INSENSITIVE_ORDER);
+    
+    return answer;
+  }
+}
